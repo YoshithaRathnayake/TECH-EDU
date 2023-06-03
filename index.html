@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Tags -->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation."
+    />
+    <meta name="author" content="LEARN TECH" />
+    <meta name="keywords" content="TECH EDU | LEARN TECH" />
+
+    <!-- Facebook OG Tags -->
+
+    <meta property="og:title" content="TECH EDU" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://yoshitharathnayake.github.io/TECH-EDU"
+    />
+    <meta property="og:image" content="img/og.jpg" alt="TECH EDU" />
+    <meta
+      property="og:description"
+      content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation."
+    />
+    <meta property="og:site_name" content="TECH EDU" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Font Awesome -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+      integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+
+    <!-- Bootstrap -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Jquery -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css"
+      integrity="sha512-E5hbw9GiuYofTcrbba1gAU64dn/54A9nmk4IEMzmp+YmiLc0WnRLOfzofb/r6spu5CVilyob07HWGhXq7Ht7dQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- LineIcons -->
+
+    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+    <!-- CSS-->
+
+    <link rel="stylesheet" type="text/CSS" href="assets/styles.css" />
+
+    <!-- Favicon -->
+
+    <link rel="icon" type="image/png" href="img/favicon.png" alt="Favicon" />
+
+    <!-- Title -->
+
+    <title>TECH EDU | LEARN TECH</title>
+  </head>
+
+  <body>
+    <nav class="nav-bar container-fluid responsive">
+      <label
+        ><a href="/"
+          ><img id="nav-label" src="img/logo.png" alt="Tech Edu Logo" /></a
+      ></label>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="nav-items" id="home" onclick="home()">home</a>
+        </li>
+        <li>
+          <a
+            href="#about-section"
+            class="nav-items"
+            id="about"
+            onclick="about()"
+            >about</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://blog.sack.edu.lk/"
+            target="_blank"
+            class="nav-items"
+            id="news"
+            onclick="news()"
+            >news</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.sack.edu.lk/contact_us"
+            target="_blank"
+            class="nav-items"
+            id="contact"
+            onclick="contact()"
+            >contact</a
+          >
+        </li>
+      </ul>
+
+      <i
+        class="fa-solid fa-bars fa-2xl"
+        style="color: #ffffff"
+        id="hamburger"
+        onclick="NavOpen()"
+      ></i>
+      <i
+        class="fa-solid fa-xmark fa-2xl"
+        style="color: #ffffff"
+        id="close"
+        onclick="NavClose()"
+      ></i>
+      <nav class="side-bar">
+        <div class="side-nav">
+          <label
+            ><a href="/"
+              ><img id="side-label" src="img/logo.png" alt="Tech Edu Logo" /></a
+          ></label>
+          <a class="nav-item" id="side-home" href="#">home</a>
+          <a href="#about-section" class="nav-item" id="side-about">about</a>
+          <a
+            class="nav-item"
+            id="side-news"
+            target="_blank"
+            href="https://blog.sack.edu.lk/"
+          >
+            news
+          </a>
+          <a
+            class="nav-item"
+            id="side-contact"
+            target="_blank"
+            href="https://www.sack.edu.lk/contact_us"
+          >
+            contact
+          </a>
+        </div>
+        <div id="nav-overlay" onclick="NavOverlay()"></div>
+      </nav>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="6"
+          aria-label="Slide 7"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/slider/img7.jpg"
+            class="d-block h-100 w-100"
+            alt="Welcome"
+          />
+          <div class="carousel-caption work">
+            <h3
+              class="animated bounceInLeft welcome"
+              style="animation-delay: 1s"
+            >
+              WELCOME TO THE
+            </h3>
+            <h1
+              class="animated bounceInRight tech-edu"
+              style="animation-delay: 2s"
+            >
+              TECH EDU
+            </h1>
+            <h2
+              class="animated bounceInLeft edu-institute"
+              style="animation-delay: 3s"
+            >
+              EDUCATIONAL INSTITUTE
+            </h2>
+            <div class="home-btn">
+              <p
+                class="animated bounceInLeft about"
+                style="animation-delay: 5s"
+              >
+                <a href="#">ABOUT US</a>
+              </p>
+              <p
+                class="animated bounceInRight find"
+                style="animation-delay: 5s"
+              >
+                <a href="#">FIND A COURSE</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slider/img1.jpg"
+            class="d-block h-100 w-100"
+            alt="Web Development"
+          />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              WEB DEVELOPMENT
+            </h5>
+            <p
+              class="animated bounceInLeft d-none d-md-block"
+              style="animation-delay: 2s"
+            >
+              Web development is creating websites by planning and arranging
+              content for online sharing & access.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slider/img2.jpg"
+            class="d-block h-100 w-100"
+            alt="Graphics Design"
+          />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              GRAPHICS DESIGN
+            </h5>
+            <p
+              class="animated bounceInLeft d-none d-md-block"
+              style="animation-delay: 2s"
+            >
+              Designing visual content that communicates ideas & messages
+              effectively is what graphics design is.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slider/img3.jpg"
+            class="d-block h-100 w-100"
+            alt="Software Development"
+          />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              SOFTWARE DEVELOPMENT
+            </h5>
+            <p
+              class="animated bounceInLeft d-none d-md-block"
+              style="animation-delay: 2s"
+            >
+              Software development is the process of creating efficient,
+              reliable, & easy-to-use applications.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slider/img6.jpg"
+            class="d-block h-100 w-100"
+            alt="Network Technology"
+          />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              GAME DEVELOPMENT
+            </h5>
+            <p
+              class="animated bounceInLeft d-none d-md-block"
+              style="animation-delay: 2s"
+            >
+              Game development is the art of creating games through concept
+              generation and design.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slider/img4.jpg"
+            class="d-block h-100 w-100"
+            alt="Robotics Technology"
+          />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              ROBOTICS TECHNOLOGY
+            </h5>
+            <p
+              class="animated bounceInLeft d-none d-md-block"
+              style="animation-delay: 2s"
+            >
+              Robotics technology is the design, construction, & operation of
+              robots to perform tasks autonomously.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/slider/img5.jpg"
+            class="d-block h-100 w-100"
+            alt="Network Technology"
+          />
+          <div class="carousel-caption">
+            <h5 class="animated bounceInRight" style="animation-delay: 1s">
+              NETWORK TECHNOLOGY
+            </h5>
+            <p
+              class="animated bounceInLeft d-none d-md-block"
+              style="animation-delay: 2s"
+            >
+              Network technology is the design & management of computer networks
+              for communication.
+            </p>
+            <p class="animated bounceInRight" style="animation-delay: 3s">
+              <a href="#">LEARN MORE</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section id="about-section">
+      <h1>ABOUT US</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
+        rerum cumque fugit, ipsam consectetur dolorem eveniet sint voluptatum
+        modi vel veritatis. Eius veniam, qui quisquam facere mollitia porro,
+        ratione saepe voluptate magnam animi quod optio aliquid rem quis quasi
+        fuga, ea illo fugit quam sequi reiciendis expedita. Corporis repellendus
+        fugit quaerat qui molestiae nisi officia. Sapiente vero rerum corporis
+        reiciendis natus aut similique accusamus ipsum nisi neque delectus amet
+        asperiores illum vel earum, optio dignissimos maiores repellat mollitia
+        veritatis voluptatibus deleniti suscipit labore tempore. Quam fugiat
+        enim architecto dolor ut dolorem odio voluptates quia velit sit,
+        repellat, voluptatem illum aperiam deleniti. Ex culpa nisi facere
+        incidunt, illo dolores consectetur autem unde ratione molestiae, eius
+        dignissimos fuga sint. Et, ipsam earum! Ullam dolorem sapiente nesciunt
+        consectetur libero nobis velit deserunt nisi quasi dolore voluptatibus
+        numquam voluptatem ipsam deleniti perferendis corrupti id amet fugiat
+        modi provident, sequi consequatur ad placeat. Maxime in nesciunt esse
+        atque ducimus corporis doloremque voluptas nihil molestias vero dolores
+        fuga, numquam ipsam vitae commodi, facilis necessitatibus modi, culpa
+        distinctio quam iure voluptate impedit iusto magni. Placeat pariatur at
+        illum beatae praesentium aut veniam possimus nemo provident maxime cum
+        eum officia repudiandae, ratione architecto eius excepturi totam ipsam
+        dignissimos!
+      </p>
+    </section>
+
+    <!--
+    <footer class="footer"></footer>
+    <div class="container">
+      <center>
+        <a href="/" class="amu-link">
+          &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          &nbsp;ANTONIAN MEDIA UNIT
+        </a>
+      </center>
+    </div>
+-->
+
+    <!-- JavaScript -->
+
+    <script src="assets/script.js"></script>
+
+    <!-- jsDelivr -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- Jquery -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Font Awesome -->
+
+    <script
+      src="https://kit.fontawesome.com/88fd71b348.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(document).scrollTop() > 300) {
+          $(".nav-bar").addClass("affix");
+          console.log("OK");
+        } else {
+          $(".nav-bar").removeClass("affix");
+        }
+      });
+
+      const menu_toggle = document.querySelector(".menu-toggle");
+      const sidebar = document.querySelector(".sidebar");
+
+      menu_toggle.addEventListener("click", () => {
+        menu_toggle.classList.toggle("is-active");
+        sidebar.classList.toggle("is-active");
+      });
+    </script>
+  </body>
+</html>
