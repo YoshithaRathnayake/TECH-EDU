@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation." />
+    <meta name="author" content="LEARN TECH" />
+    <meta name="keywords" content="CONTACT US | TECH EDU" />
+
+    <!-- Facebook OG Tags -->
+    <meta property="og:title" content="TECH EDU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yoshitharathnayake.github.io/TECH-EDU" />
+    <meta property="og:image" content="../assets/img/og.jpg" alt="TECH EDU" />
+    <meta property="og:description"
+        content="This is the official website of Tech Edu Institute. We are teaching the new technology to the younger generation." />
+    <meta property="og:site_name" content="TECH EDU" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.1/animate.min.css"
+        integrity="sha512-E5hbw9GiuYofTcrbba1gAU64dn/54A9nmk4IEMzmp+YmiLc0WnRLOfzofb/r6spu5CVilyob07HWGhXq7Ht7dQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Swipers CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Edo Font -->
+    <link href="https://fonts.cdnfonts.com/css/edo" rel="stylesheet">
+
+    <!-- LineIcons -->
+    <link href="your-project-dir/icon-font/lineicons.css" rel="stylesheet" />
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet" />
+
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/CSS" href="../assets/css/about.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" alt="Favicon" />
+
+    <!-- Title -->
+    <title>CONTACT US | TECH EDU</title>
+</head>
+
+<body id="home-section" style="background-image: url(../assets/img/contact-header.jpg);">
+
+    <!-- Navigation Bar -->
+    <div>
+        <!-- Desktop View Navigation Bar -->
+        <nav class="nav-bar container-fluid responsive">
+
+            <!-- Nav Label -->
+            <label><a href="/"><img id="nav-label" src="../assets/img/logo.png" alt="Tech Edu Logo" /></a></label>
+
+            <!-- Nav Links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="/" class="nav-items" id="home" onclick="home()">home</a>
+                </li>
+                <li>
+                    <a href="/about/about.html" class="nav-items" id="about" onclick="about()">about</a>
+                </li>
+                <li>
+                    <a href="/courses/courses.html" class="nav-items" id="courses" onclick="courses()">courses</a>
+                </li>
+                <li>
+                    <a href="/contact/contact.html" class="nav-items" id="contact" onclick="contact()"
+                        style="color: rgb(0, 255, 204);">contact</a>
+                </li>
+            </ul>
+
+            <!-- Menu Icons -->
+            <i class="fa-solid fa-bars fa-2xl" style="color: #ffffff" id="hamburger" onclick="NavOpen()"></i>
+            <i class="fa-solid fa-xmark fa-2xl" style="color: #ffffff" id="close" onclick="NavClose()"></i>
+        </nav>
+
+        <!-- Mobile View Navigation Bar (Side Navigation Bar) -->
+        <nav class="side-bar">
+            <div class="side-nav">
+
+                <!-- Nav Label -->
+                <label><a href="/"><img id="side-label" src="../assets/img/logo.png" alt="Tech Edu Logo" /></a></label>
+
+                <!-- Nav Links -->
+                <a class="nav-item" id="side-home" href="/">home</a>
+                <a href="/about/about.html" id="side-about" class="nav-item">about</a>
+                <a class="nav-item" id="side-courses" href="/courses/courses.html">
+                    courses
+                </a>
+                <a class="nav-item" id="side-contact" href="/contact/contact.html" style="color: rgb(0, 255, 204);">
+                    contact
+                </a>
+            </div>
+
+            <!-- Nav Overlay -->
+            <div id="nav-overlay" onclick="NavOverlay()"></div>
+        </nav>
+    </div>
+
+    <!-- Back to Top button goes here -->
+    <div id="backToTop"></div>
+
+    <div class="header">
+        <h1 class="main-header">CONTACT US</h1>
+        <center>
+            <hr>
+        </center>
+    </div>
+
+    <section id="second-section">
+        <div class="container-fluid mb-5">
+            <div class="google-map row">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5005.1003110759!2d80.62775051562666!3d7.322164927958504!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79aa0d16eecbae25!2sSt.%20Anthony&#39;s%20College!5e0!3m2!1sen!2slk!4v1641754171541!5m2!1sen!2slk"
+                    width="100%" height="400vh" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <section class="ftco-section mt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-md-12">
+                        <div class="wrapper">
+                            <div class="row no-gutters">
+                                <div class="col-md-7 d-flex align-items-stretch">
+                                    <div class="contact-wrap w-100 p-md-5 p-4">
+                                        <h3 class="mb-4">Send Us a Message</h3>
+                                        <div id="form-message-warning" class="mb-4"></div>
+                                        <div id="form-message-success" class="mb-4">
+                                            Your message was sent, thank you!
+                                        </div>
+                                        <form method="POST" id="contactForm" name="contactForm">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="name" id="name"
+                                                            placeholder="Name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            placeholder="Email">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject"
+                                                            id="subject" placeholder="Subject">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <textarea name="message" class="form-control" id="message"
+                                                            cols="30" rows="7" placeholder="Message"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group">
+                                                        <input type="submit" value="Send Message"
+                                                            class="btn btn-primary">
+                                                        <div class="submitting"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 d-flex align-items-stretch">
+                                    <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+                                        <h3 class="mb-4 mt-md-4">Get in touch</h3>
+                                        <div class="dbox w-100 d-flex align-items-start mt-5 pt-5">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-map-marker"></span>
+                                            </div>
+                                            <div class="text pl-3">
+                                                <p><span>Address:</span>No : 20/1, Katugasthota, Kandy</p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-phone"></span>
+                                            </div>
+                                            <div class="text pl-3">
+                                                <p><span>Phone:</span> <a href="tel:+94 081 221 2124">081 221 2124</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="dbox w-100 d-flex align-items-center">
+                                            <div class="icon d-flex align-items-center justify-content-center">
+                                                <span class="fa fa-paper-plane"></span>
+                                            </div>
+                                            <div class="text pl-3">
+                                                <p><span>Email:</span> <a
+                                                        href="mailto:yoshithasbrathnayake@gmail.com">info@tech.edu.lk</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!-- Footer goes here -->
+
+
+    <!-- JavaScript -->
+    <script src="../assets/js/about.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+        integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/88fd71b348.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Internel Script goes here -->
+    <script>
+        // Scroll Animation
+        ScrollReveal({
+            reset: true,
+            distance: '100px',
+            duration: 2000,
+        });
+        ScrollReveal().reveal('.header .main-header', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.header hr', { delay: 1000, origin: 'bottom' });
+        ScrollReveal().reveal('.google-map', { delay: 500, origin: 'bottom' });
+        ScrollReveal().reveal('.ftco-section', { delay: 1000, origin: 'bottom' });
+
+
+        // Menu icons animation
+        const menu_toggle = document.querySelector(".menu-toggle");
+        const sidebar = document.querySelector(".sidebar");
+
+        menu_toggle.addEventListener("click", () => {
+            menu_toggle.classList.toggle("is-active");
+            sidebar.classList.toggle("is-active");
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+</body>
+
+</html>
