@@ -1,6 +1,6 @@
 /* Import Edo, Montserrat Font */
 @import url("http://fonts.cdnfonts.com/css/edo");
-@import url("http://fonts.cdnfonts.com/css/montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     margin: 0;
@@ -516,7 +516,7 @@ html {
     text-align: center;
     color: white;
     text-shadow: 0 0 30px black;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header hr {
@@ -557,12 +557,12 @@ html {
 
 .title {
     font-size: 50px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .shadow-text {
     font-size: 60px;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     opacity: 0.2;
     position: relative;
     bottom: 55px;
