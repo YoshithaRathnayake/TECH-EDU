@@ -1,6 +1,7 @@
 /* Import Edo, Montserrat Font */
 @import url("http://fonts.cdnfonts.com/css/edo");
-@import url("http://fonts.cdnfonts.com/css/montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 
 body {
   margin: 0;
@@ -127,7 +128,7 @@ html {
 }
 
 .carousel p {
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(207, 207, 207);
   text-shadow: 0 0 30px black;
 }
@@ -144,7 +145,7 @@ html {
 .carousel-caption h5 {
   font-size: 55px;
   letter-spacing: 2px;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   text-shadow: 0 0 30px black;
   margin-top: 25px;
 }
@@ -164,7 +165,7 @@ html {
   margin-top: 100px;
   font-size: 25px;
   letter-spacing: 5px;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(190, 190, 190);
   text-shadow: 0 0 30px black;
 }
@@ -174,7 +175,7 @@ html {
   bottom: 3px;
   font-size: 23px;
   letter-spacing: 2px;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: rgb(156, 156, 156);
   text-shadow: 0 0 30px rgb(0, 0, 0);
 }
@@ -887,7 +888,7 @@ transform: scale(1, 1);
 
 .sec-text {
   position: relative;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: rgb(231, 231, 231);
@@ -907,12 +908,12 @@ transform: scale(1, 1);
 
 .title {
   font-size: 50px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .shadow-text {
   font-size: 60px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   opacity: 0.2;
   position: relative;
   bottom: 55px;
@@ -926,7 +927,7 @@ hr {
 
 .intro-text {
   position: relative;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: rgb(200, 200, 200);
@@ -1096,7 +1097,7 @@ hr {
   background-position: center;
   background-size: cover;
   border-radius: 20px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .counter-section span {
@@ -1131,7 +1132,7 @@ hr {
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   padding: 20px;
   grid-gap: 40px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   align-items: center;
   place-items: center;
 }
@@ -1257,7 +1258,7 @@ hr {
 
 .teachers .card .description {
   text-align: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
   margin-top: 20px;
   position: relative;
@@ -1318,7 +1319,7 @@ hr {
   margin: 0 2em;
   background-size: cover;
   background-position: center;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .swiper-slide:not(.swiper-slide-active) {
@@ -1988,7 +1989,7 @@ footer {
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.523);
   font-size: 13px;
   line-height: 25px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -2009,7 +2010,7 @@ footer {
 
 .label {
   font-size: 40px;
-  font-family: montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: white;
   position: relative;
   bottom: 10px;
